@@ -1,4 +1,6 @@
-# PLATEAU SDK-AR-Extensions for Unity ARサンプルシーン
+# AR Treasure Map
+### PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
+
 
 AR-Extensions-for-Unityを用いたサンプルアプリケーションの利用方法についてご紹介します。
 
@@ -186,4 +188,18 @@ HDRP, Built-in Rendering Pipelineでは動作しません。<br>
 設定し直したPLATEAUモデルに合わせ、メダル（チェックポイント）の位置を変更したい場合は、"PreimportCityModel", "ARMarkerBasedCityModel"それぞれの中にあるRoutePointの位置を変更してください。
 
 <img width="800" alt="ar_sample_end" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_customize_routepos.png">
+
+# ライセンス
+- 本リポジトリはMITライセンスで提供されています。
+- 本システムの開発はユニティ・テクノロジーズ・ジャパン株式会社が行っています。
+- ソースコードおよび関連ドキュメントの著作権は国土交通省に帰属します。
+
+# 注意事項/利用規約
+- 本ツールはベータバージョンです。バグ、動作不安定、予期せぬ挙動等が発生する可能性があり、動作保証はできかねますのでご了承ください。
+- 処理をしたあとにToolkitsをアンインストールした場合、建物の表示が壊れるなど挙動がおかしくなる場合がございます。
+- 本ツールをアップデートした際は、一度Unity エディタを再起動してご利用ください。
+- パフォーマンスの観点から、3D都市モデルをダウンロード・インポートする際は、3㎞2範囲内とすることを推奨しています。
+- インポートエリアの広さや地物の種類（建物、道路、災害リスクなど）が増えると処理負荷が高くなる可能性があります。
+- 本リポジトリの内容は予告なく変更・削除する可能性があります。
+- 本リポジトリの利用により生じた損失及び損害等について、国土交通省はいかなる責任も負わないものとします。
 
