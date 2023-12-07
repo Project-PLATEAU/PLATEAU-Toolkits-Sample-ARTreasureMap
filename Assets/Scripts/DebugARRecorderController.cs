@@ -1,11 +1,14 @@
 using PlateauToolkit.AR;
+using UnityEngine;
+using UnityEngine.UI;
+
+#if UNITY_ANDROID
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
+#endif
 
 namespace PlateauSamples.TreasureMap
 {
@@ -16,11 +19,11 @@ namespace PlateauSamples.TreasureMap
         [SerializeField] Button m_StopPlaybackButton;
         [SerializeField] Button m_StartPlaybackButtonPrefab;
 
+#if UNITY_ANDROID
         readonly List<GameObject> m_PlaybackButtons = new();
 
         void OnEnable()
         {
-
             if (!m_SessionRecorder.GetController(out ARCoreSessionRecorder.RecorderController controller))
             {
                 return;
@@ -93,5 +96,6 @@ namespace PlateauSamples.TreasureMap
             m_StartRecordButton.onClick.RemoveAllListeners();
             m_StopPlaybackButton.onClick.RemoveAllListeners();
         }
+#endif
     }
 }
