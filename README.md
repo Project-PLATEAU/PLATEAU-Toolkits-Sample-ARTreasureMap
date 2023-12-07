@@ -43,14 +43,14 @@ PLATEAU SDK-AR-Extensions for Unityを利用しているため、PLATEAUの3D都
 
 
 # 2. サンプルシーンの利用手順
-## 2-1. 必要環境
+## 2-1. 検証済環境
 ### OS環境
 - Windows11
 - macOS Ventura 13.2
 - Android 13
 
 ### Unity Version
-- Unity 2021.3.31f1 (2023/10/10現在 2021 LTSバージョン)
+- Unity 2021.3.30
     - Unity 2021.3系であれば問題なく動作する見込みです。
 
 ### Rendering Pipeline
