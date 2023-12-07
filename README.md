@@ -48,7 +48,6 @@ PLATEAU SDK-AR-Extensions for Unityを利用しているため、PLATEAUの3D都
 - Windows11
 - macOS Ventura 13.2
 - Android 13
-- iOS 16.7.1
 
 ### Unity Version
 - Unity 2021.3.31f1 (2023/10/10現在 2021 LTSバージョン)
