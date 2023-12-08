@@ -63,11 +63,13 @@ HDRP, Built-in Rendering Pipelineでは動作しません。<br>
 ## 2-2. サンプルシーンのビルド方法
 
 ①Assets/Main.unityを開きます。<br>
-<img width="600" alt="ar_sample_scene" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_scene.png">
+<img width="808" alt="ar_sample_scene" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/9411e356-a38d-4403-8310-4fc7a0365108">
+
 
 ②メニューよりFile > Build Settingsを選択します。<br>
 
-<img width="600" alt="ar_sample_buildsettings" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_buildsettings.png">
+<img width="600" alt="ar_sample_buildsettings" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/4982c26c-39e2-4063-b70e-ac872752eb58">
+
 
 ③android, ios以外になっている場合は、android, iosを選択して、画面下部にある「Switch Platform」ボタンを押下し、Platformを切り替えます。<br>
 ④画面下部にある「Build」ボタンを押下します。出力先を選択してビルドを開始します。
@@ -76,14 +78,18 @@ HDRP, Built-in Rendering Pipelineでは動作しません。<br>
 ### 対応エリア
 サンプルシーンのアプリケーションは東京銀座エリアに対応しています。<br>
 デフォルトでは、以下の地点にコンテンツが配置されています。<br>
-![image](https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/127069970/20a7a0ae-bfd4-443b-8e5b-70df62da8d7d)
+
+<img width="600" alt="ar_sample_buildsettings" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/765ab0b6-4854-4dc5-9a84-40c7672ab17e">
+
 
 
 ### ビルドしたアプリケーションの操作方法
 ①ビルドしたアプリケーションを開くと、オープニング画面が表示されます。<br>
 「始めましょう」のボタンをタップします。<br>
 
-<img width="400" alt="ar_sample_ginzasix" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/127069970/9451dcee-7a6c-4cce-b1d9-130cf56ef803">
+
+<img width="400" alt="ar_sample_title" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/2b29a609-abe4-48c7-bf08-5619709dd754">
+
 
 
 ②PLATEAUモデルの使い方を選択してください。<br>
@@ -92,8 +98,7 @@ HDRP, Built-in Rendering Pipelineでは動作しません。<br>
 - ストリーミングモデル・・・PLATEAUモデルをストリーミングでダウンロードしながら利用する機能です。
 - ARマーカーモデル・・・Unity Editorで事前にPLATEAUモデルをインポートしておきかつARマーカーポジションを設定した上で、マーカーを使って位置合わせを行いながら利用する機能です。
 
-
-<img width="400" alt="ar_sample_ginzasix" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_selection.png">
+<img width="400" alt="ar_sample_selection" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/ee98f22d-3db0-4d1b-b730-2b72aaf03fc8">
 
 すると、ARを体験が開始されます。
 
@@ -101,7 +106,10 @@ HDRP, Built-in Rendering Pipelineでは動作しません。<br>
 位置合わせが完了すると、周囲にARコンテンツが表示されます。<br>
 ※天候などによっては位置合わせ処理が完了しないことがあります。別の角度から建物にカメラをかざしてください。<br>
 
-<img width="400" alt="スクリーンショット 2023-11-28 10 51 59" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/849af2f7-ef36-4476-a184-cfd2b4aa7191"><br>
+
+<img width="400" alt="ar_sample_please_scan" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/6d83fd0b-310e-4b60-a65e-3a729ac4928f">
+
+
 ※仮画像です。
 
 
@@ -110,10 +118,12 @@ HDRP, Built-in Rendering Pipelineでは動作しません。<br>
 ④配置されたコインに近づくと、コインを取得することができます。<br>
 エリアには複数のコインが配置されているので、周囲を歩き回ってコインを集めましょう。<br>
 
-<img width="400" alt="ar_sample_ginzasix" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/f3119614-1186-4765-8eb8-9de59019d5ea">
+
+<img width="400" alt="ar_sample_gotocheck" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/18492506-2791-4eb7-8b25-f5ade3fe35a2">
+
+<img width="400" alt="ar_sample_ginzasix" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/12e12ddd-1279-4a5d-bb9d-439e57c30508">
 
 
-<img width="400" alt="ar_sample_ginzasix" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_ginzasix.png">
 
 ⑤アプリを終了するときは終了ボタンを押し、アプリを終了します。<br>
 
