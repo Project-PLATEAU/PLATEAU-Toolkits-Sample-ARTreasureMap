@@ -105,9 +105,8 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
         - 天候などによっては位置合わせ処理が完了しないことがあります。別の角度から建物にカメラをかざしてください。
     - ARマーカーモデルでは用意されたARマーカーを読み取り、3D都市モデルを表示させてください。
 
-<img width="400" alt="ar_sample_please_scan" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/6d83fd0b-310e-4b60-a65e-3a729ac4928f">
+<img width="400" alt="ar_sample_please_scan" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/blob/manual/images/ar_sample_ar_scan.png">
 
-※仮画像です。
 
 4. 開始点に設定されているGINZA SIXの入り口に配置されているメダルを最初に獲得すると次のメダルまでの道筋が表示されるので、目的地までメダル集めを進行してください。
 
