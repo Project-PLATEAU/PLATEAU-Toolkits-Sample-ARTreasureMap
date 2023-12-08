@@ -33,7 +33,7 @@ MonoBehaviour:
     m_SerializedTextureGuid:
       m_GuidLow: 10669292313640886178
       m_GuidHigh: 472863216104572520
-    m_Size: {x: 0.095, y: 0.094905}
+    m_Size: {x: 0.095, y: 0.095}
     m_SpecifySize: 1
     m_Name: ARMarkerImage2
     m_Texture: {fileID: 0}
@@ -43,7 +43,7 @@ MonoBehaviour:
     m_SerializedTextureGuid:
       m_GuidLow: 8376469650422495317
       m_GuidHigh: 4883417085124435931
-    m_Size: {x: 0.095, y: 0.094905}
+    m_Size: {x: 0.095, y: 0.095}
     m_SpecifySize: 1
     m_Name: ARMarkerImage3
     m_Texture: {fileID: 0}
