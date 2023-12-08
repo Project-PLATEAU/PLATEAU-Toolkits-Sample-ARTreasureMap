@@ -164,7 +164,7 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 1.新しいマーカーを"Referenced Image Library"に追加します。<br>
 
-<img width="600" alt="ar_sample_multimarker_reflib" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/44cf56ba-57b7-4162-8e81-41fa244033ac">
+<img width="600" alt="ar_sample_multimarker_reflib" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/blob/manual/images/ar_sample_multimarkers_reflib%20(1).png">
 
 
 2. 追加したマーカーをヒエラルキー内にある“PlateauARMarkerCityModel”に追加します。<br>
