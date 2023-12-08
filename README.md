@@ -188,7 +188,7 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 参考までに、本サンプルシーンでは下記の場所にマーカーを複数配置しています。<br>
 
-<img width="600" alt="ar_sample_multimarker_map" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/c5b3b45e-de35-4139-abf9-b396f082fc69">
+<img width="600" alt="ar_sample_multimarker_map" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/blob/manual/images/ar_sample_marker_map.png">
 
 
 ## 3-2. メダル（チェックポイント）の位置を変更する
