@@ -179,7 +179,7 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 4. “PlateauARMarkerCityModel”の中でそれぞれのARMarkerの中にARMarkerPointをアタッチします。<br>
 
-<img width="600" alt="スクリーンショット 2023-12-01 18 08 00" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/5305e957-4e96-4eee-9649-5b8e7689f320">
+<img width="600" alt="スクリーンショット 2023-12-01 18 08 00" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/blob/manual/images/ar_sample_marker_attach.png">
 
 5. それぞれのARMakerPointをシーンビューの中でPLATEAU都市モデル中に配置して行きます。<br>
 実際に実空間上でスキャンする想定の場所に配置してください。
