@@ -121,13 +121,14 @@ HDRP, Built-in Rendering Pipelineでは動作しません。<br>
 
 <img width="400" alt="ar_sample_gotocheck" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/18492506-2791-4eb7-8b25-f5ade3fe35a2">
 
+<br>
 <img width="400" alt="ar_sample_ginzasix" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/12e12ddd-1279-4a5d-bb9d-439e57c30508">
 
 
 
 ⑤アプリを終了するときは終了ボタンを押し、アプリを終了します。<br>
 
-<img width="400" alt="ar_sample_end" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_end.png">
+<img width="400" alt="ar_sample_end" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/62eac7de-0728-4863-b4eb-da074ee74e1d">
 
 
 # 3. サンプルシーンのカスタマイズ方法
@@ -141,9 +142,13 @@ HDRP, Built-in Rendering Pipelineでは動作しません。<br>
 
 <img width="800" alt="ar_sample_end" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_customize_preimport_modelreplace.png">
 
+<img width="800" alt="ar_sample_customize_preimport_modelreplace" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/f4c315b0-500b-47c3-bb6e-2948780f4544">
+
+
 ### ストリーミング形式
 "StreamingCityModel"の中にある"CesiumGeoreference"をクリックし、Inspectorビューの中でLatitudeとLongitudeを変更して対象位置を変更してください。<br>
-<img width="800" alt="ar_sample_end" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_customize_streaming_lonlat.png">
+<img width="800" alt="ar_sample_customize_streaming_lonlat" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/1356dc4c-929a-4eb7-8fd7-01c81e4a7f05">
+
 
 ### ARマーカー形式
 "ARMarkerBasedCityModel"の中にある"GinzaImportedCityModel"をPLATEAU SDKでインポートした別のPLATEAUモデルに置き換えて利用してください。<br>
@@ -152,7 +157,8 @@ HDRP, Built-in Rendering Pipelineでは動作しません。<br>
 また、利用場所に変更に伴い、マーカーの配置場所を変更してください。"ARMarkerBasedCityModel"の中にある"ARMarkerPoint"の位置を変更してください。
 詳しくは[マーカによる3D都市モデルの位置合わせ機能](https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/readme.md#4-ar%E3%83%9E%E3%83%BC%E3%82%AB%E3%83%BC%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9Fplateau%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E4%BD%8D%E7%BD%AE%E5%90%88%E3%82%8F%E3%81%9B%E6%A9%9F%E8%83%BD)をご確認ください。
 
-<img width="800" alt="ar_sample_end" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_customize_markerposion.png">
+<img width="800" alt="ar_sample_customize_markerposion" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/1d7ba663-2676-4fc4-89c1-6c7c9a270c06">
+
 
 
 #### 複数のマーカーを配置する場合(WIP)
@@ -162,42 +168,46 @@ HDRP, Built-in Rendering Pipelineでは動作しません。<br>
 
 1.新しいマーカーを"Referenced Image Library"に追加します。<br>
 
-<img width="600" alt="スクリーンショット 2023-12-01 18 14 01" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/5221e9e5-8e81-440d-b325-3d79a47519d3">
+<img width="600" alt="ar_sample_multimarker_reflib" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/44cf56ba-57b7-4162-8e81-41fa244033ac">
 
 
 2. 追加したマーカーをヒエラルキー内にある“PlateauARMarkerCityModel”に追加します。<br>
 
-<img width="600" alt="スクリーンショット 2023-12-01 18 08 00" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/58e7535e-d05c-43a3-9aa1-3ca0ba8bbb9c">
+<img width="600" alt="ar_sample_multimarker_plateauarmarkermodel" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/3c768958-5d66-4a9b-a20d-8721c38b8cf9">
+
 
 3. ヒエラルキー内において"ARMarkerPoint"を追加した数分だけ複製します。<br>
 
-<img width="600" alt="スクリーンショット 2023-12-01 18 08 00" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/79d5dc55-09a8-4782-8087-16085a8868a3">
+<img width="600" alt="スクリーンショット 2023-12-01 18 08 00" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/be7eba14-ac12-4d9c-908e-384f232a010d">
+
 
 4. “PlateauARMarkerCityModel”の中でそれぞれのARMarkerの中にARMarkerPointをアタッチします。<br>
-<img width="600" alt="スクリーンショット 2023-12-01 18 08 00" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/d0301eb3-c212-4ffa-a677-75490d7c76bd">
 
+<img width="600" alt="スクリーンショット 2023-12-01 18 08 00" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/5305e957-4e96-4eee-9649-5b8e7689f320">
 
 5. それぞれのARMakerPointをシーンビューの中でPLATEAU都市モデル中に配置して行きます。<br>
 実際に実空間上でスキャンする想定の場所に配置してください。
-<img width="600" alt="スクリーンショット 2023-12-01 18 08 00" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/d0956e5c-ffdb-411b-a9d3-4746b6c878c8">
+
+<img width="600" alt="ar_sample_arpoint_place" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/c112c044-a907-4df8-8dbf-473ccb799d5e">
 
 ※参考までに、本サンプルシーンでは下記の場所にマーカーを複数配置しています。<br>
 
-<img width="600" alt="スクリーンショット 2023-12-04 10 36 37" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/assets/137732437/7a9ec677-5aa8-44fb-8a4b-316774830994">
+<img width="600" alt="ar_sample_multimarker_map" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/c5b3b45e-de35-4139-abf9-b396f082fc69">
 
 
 ## 3-2. メダル（チェックポイント）の位置を変更する
 
 設定し直したPLATEAUモデルに合わせ、メダル（チェックポイント）の位置を変更したい場合は、"PreimportCityModel", "ARMarkerBasedCityModel"それぞれの中にあるCheckPointの位置を変更してください。
 
-<img width="800" alt="ar_sample_end" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_customize_checkpoint.png">
+<img width="800" alt="ar_sample_customize_checkpoint" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/73b6814e-7419-4736-a9bf-fa25c90dcd9a">
 
 
 ## 3-3. 経由点の位置を変更する
 
 設定し直したPLATEAUモデルに合わせ、メダル（チェックポイント）の位置を変更したい場合は、"PreimportCityModel", "ARMarkerBasedCityModel"それぞれの中にあるRoutePointの位置を変更してください。
 
-<img width="800" alt="ar_sample_end" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_customize_routepos.png">
+<img width="800" alt="ar_sample_customize_routepos" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/591081d1-b059-4572-9c75-f7c740c6c449">
+
 
 # ライセンス
 - 本リポジトリはMITライセンスで提供されています。
