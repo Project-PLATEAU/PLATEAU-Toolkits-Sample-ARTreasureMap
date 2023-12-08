@@ -169,7 +169,7 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 2. 追加したマーカーをヒエラルキー内にある“PlateauARMarkerCityModel”に追加します。<br>
 
-<img width="600" alt="ar_sample_multimarker_plateauarmarkermodel" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/3c768958-5d66-4a9b-a20d-8721c38b8cf9">
+<img width="600" alt="ar_sample_multimarker_plateauarmarkermodel" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/blob/manual/images/ar_sample_multimarker.png">
 
 
 3. ヒエラルキー内において"ARMarkerPoint"を追加した数分だけ複製します。<br>
@@ -184,7 +184,7 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 5. それぞれのARMakerPointをシーンビューの中でPLATEAU都市モデル中に配置して行きます。<br>
 実際に実空間上でスキャンする想定の場所に配置してください。
 
-<img width="600" alt="ar_sample_arpoint_place" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/c112c044-a907-4df8-8dbf-473ccb799d5e">
+<img width="600" alt="ar_sample_arpoint_place" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/blob/manual/images/ar_sample_armarkerpoint_move.png">
 
 参考までに、本サンプルシーンでは下記の場所にマーカーを複数配置しています。<br>
 
