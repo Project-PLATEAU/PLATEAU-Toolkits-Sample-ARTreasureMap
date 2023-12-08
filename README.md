@@ -157,7 +157,7 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 <img width="800" alt="ar_sample_customize_markerposion" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/1d7ba663-2676-4fc4-89c1-6c7c9a270c06">
 
-#### 複数のマーカーを配置する場合(WIP)
+#### 複数のマーカーを配置する場合
 
 本サンプルではAR Extensionsの機能を利用し、複数のマーカーを配置した位置合わせを実施することも可能です。<br>
 下記のフローをご確認ください。
