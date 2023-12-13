@@ -162,7 +162,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.plateautoolkit": {
-      "version": "https://github.com/unity-shimizu/PLATEAU-SDK-Toolkits-for-Unity.git",
+      "version": "https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Toolkits-for-Unity.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -173,10 +173,10 @@
         "com.unity.visualeffectgraph": "12.1.10",
         "com.unity.nuget.newtonsoft-json": "3.2.1"
       },
-      "hash": "092f3fb3b514a1c86f81030e777831af1410e626"
+      "hash": "e3eb7278eda18480412b9e7aead7dc5579c59940"
     },
     "com.unity.plateautoolkit.ar": {
-      "version": "https://github.com/unity-shimizu/PLATEAU-SDK-AR-Extensions-for-Unity.git",
+      "version": "https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-AR-Extensions-for-Unity.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
@@ -186,16 +186,16 @@
         "com.synesthesias.plateau-unity-sdk": "1.0.0",
         "com.google.ar.core.arfoundation.extensions": "1.39.0"
       },
-      "hash": "431cdc55de9ebd0d02eff5c144ee476a56aed3be"
+      "hash": "c97f14233a54bd3ff8471bc2ba3290bde735d1d0"
     },
     "com.unity.plateautoolkit.maps": {
-      "version": "https://github.com/unity-shimizu/PLATEAU-SDK-Maps-Toolkit-for-Unity.git",
+      "version": "https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-SDK-Maps-Toolkit-for-Unity.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.synesthesias.plateau-unity-sdk": "1.0.0"
       },
-      "hash": "2d8845780ad98c444b9bee47a724e206872082bb"
+      "hash": "182fe9fe6c6adf40263662675f5984a88db66a5e"
     },
     "com.unity.render-pipelines.core": {
       "version": "12.1.12",
