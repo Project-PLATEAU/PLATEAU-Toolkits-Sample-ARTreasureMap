@@ -3526,7 +3526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "AR\u30ED\u30B1\u30FC\u30B7\u30E7\u30F3\u5192\u967A"
+  m_text: "AR\u30C8\u30EC\u30B8\u30E3\u30FC\u30DE\u30C3\u30D7"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4579c0334894c6e449d86bea0cb44d02, type: 2}
   m_sharedMaterial: {fileID: 8436196141813588216, guid: 4579c0334894c6e449d86bea0cb44d02,
