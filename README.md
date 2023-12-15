@@ -61,7 +61,7 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 1. メニューより "File" > "Build Settings" を選択し Build Settings ウィンドウを表示します。
 
-<img width="600" alt="ar_sample_buildsettings" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/4982c26c-39e2-4063-b70e-ac872752eb58">
+<img width="600" alt="ar_sample_buildsettings" src="/Documentation~/Images/ar_sample_buildsettings.png">
 
 2. プラットフォームがAndroidかiOS以外になっている場合は、アプリケーションを動作させる端末に合わせてプラットフォームを選択し、画面下部にある「Switch Platform」ボタンからプラットフォームを切り替えます。<br>
 
@@ -82,13 +82,13 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 サンプルプロジェクトでは東京銀座のGINZA SIX周辺の以下の地点にメダルと目的地を配置しています。<br>
 
-<img width="600" alt="ar_sample_buildsettings" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/765ab0b6-4854-4dc5-9a84-40c7672ab17e">
+<img width="600" alt="ar_sample_marker_map" src="/Documentation~/Images/ar_sample_marker_map.png">
 
 ### アプリケーションプレイ手順
 
 1. ビルドしたアプリケーションを開くと、オープニング画面が表示されます。「始めましょう」のボタンをタップします。
 
-<img width="400" alt="ar_sample_title" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/2b29a609-abe4-48c7-bf08-5619709dd754">
+<img width="400" alt="ar_sample_title" src="/Documentation~/Images/ar_sample_title.png">
 
 2. PLATEAU 3D都市モデルの表示方法を選択します。これらはサンプルとして主なARでの3D都市モデルの表示方法の実装例を紹介するためのものであり、どの方法でも体験できる内容は同じです。いずれかの表示方法を選択すると、メダル集めのメインシーンへ遷移します。
     - インポートしたモデル
@@ -98,27 +98,27 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
     - ARマーカーモデル
         - Unityエディターで事前にインポートした3D都市モデルにARマーカーによる自己位置推定機能 ( `PlateauARMarkerCityModel` ) を設定しています。実行時、ARマーカーを読み取って3D都市モデルを表示します。
 
-<img width="400" alt="ar_sample_selection" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/ee98f22d-3db0-4d1b-b730-2b72aaf03fc8">
+<img width="400" alt="ar_sample_selection" src="/Documentation~/Images/ar_sample_selection.png">
 
 3. それぞれの表示方法に応じた位置合わせの初期化処理が開始されます。位置合わせが完了すると、周囲にメダルなどのARコンテンツが表示されます。
     - インポートしたモデル、ストリーミングモデルでは周辺建物にカメラを向けて、自己位置推定を行います。
         - 天候などによっては位置合わせ処理が完了しないことがあります。別の角度から建物にカメラをかざしてください。
     - ARマーカーモデルでは用意されたARマーカーを読み取り、3D都市モデルを表示させてください。
 
-<img width="400" alt="ar_sample_please_scan" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/blob/manual/images/ar_sample_ar_scan.png">
+<img width="400" alt="ar_sample_ar_scan" src="/Documentation~/Images/ar_sample_ar_scan.png">
 
 
 4. 開始点に設定されているGINZA SIXの入り口に配置されているメダルを最初に獲得すると次のメダルまでの道筋が表示されるので、目的地までメダル集めを進行してください。
 
-<img width="400" alt="ar_sample_gotocheck" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/18492506-2791-4eb7-8b25-f5ade3fe35a2">
+<img width="400" alt="ar_sample_gotocheck" src="/Documentation~/Images/ar_sample_go_to_check.png">
 
 <br>
-<img width="400" alt="ar_sample_ginzasix" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/12e12ddd-1279-4a5d-bb9d-439e57c30508">
+<img width="400" alt="ar_sample_ginzasix" src="/Documentation~/Images/ar_sample_ginzasix.png">
 
 5. 最後のメダルを集めると、メダル集め終了ウィンドウが表示されます。
     - 「終了」ボタンをタップすると、最初の画面に戻ります。
 
-<img width="400" alt="ar_sample_end" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/62eac7de-0728-4863-b4eb-da074ee74e1d">
+<img width="400" alt="ar_sample_end" src="/Documentation~/Images/ar_sample_end.png">
 
 # 3. サンプルプロジェクトのカスタマイズ方法
 ## 3-1. アプリケーションを別の場所で利用したい場合
@@ -132,9 +132,8 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 次に、 "PreimportedCityModel" にアタッチされている `Plateau AR Positioning` コンポーネントをインスペクタで開き、インポートした 3D都市モデルオブジェクトを `Plateau City Model` フィールドに設定してください。
 
-<img width="800" alt="ar_sample_end" src="https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/SampleSceneReadmeImages/ARTreasureMap/ar_sample_customize_preimport_modelreplace.png">
 
-<img width="800" alt="ar_sample_customize_preimport_modelreplace" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/f4c315b0-500b-47c3-bb6e-2948780f4544">
+<img width="800" alt="ar_sample_customize_preimport_modelreplace" src="/Documentation~/Images/ar_sample_customize_preimport_modelreplace.png">
 
 ### ストリーミング形式
 
@@ -145,7 +144,7 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 "StreamingCityModel" をアクティブにして、シーン上に設定した場所の3D都市モデルが表示されることを確認してください。
 
-<img width="800" alt="ar_sample_customize_streaming_lonlat" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/1356dc4c-929a-4eb7-8fd7-01c81e4a7f05">
+<img width="800" alt="ar_sample_customize_streaming_lonlat" src="/Documentation~/Images/ar_sample_customize_streaming_lonlat.png">
 
 ### ARマーカー形式
 
@@ -155,7 +154,7 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 ARマーカー位置の設定方法は[マーカによる3D都市モデルの位置合わせ機能](https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/readme.md#4-ar%E3%83%9E%E3%83%BC%E3%82%AB%E3%83%BC%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9Fplateau%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E4%BD%8D%E7%BD%AE%E5%90%88%E3%82%8F%E3%81%9B%E6%A9%9F%E8%83%BD)をご確認ください。
 
-<img width="800" alt="ar_sample_customize_markerposion" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/1d7ba663-2676-4fc4-89c1-6c7c9a270c06">
+<img width="800" alt="ar_sample_customize_markerposion" src="/Documentation~/Images/ar_sample_customize_markerposion.png">
 
 #### 複数のマーカーを配置する場合
 
@@ -164,12 +163,12 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 1.新しいマーカーを"Referenced Image Library"に追加します。<br>
 
-<img width="600" alt="ar_sample_multimarker_reflib" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/blob/manual/images/ar_sample_multimarkers_reflib%20(1).png">
+<img width="600" alt="ar_sample_multimarker_reflib" src="/Documentation~/Images/ar_sample_multimarkers_reflib.png">
 
 
 2. 追加したマーカーをヒエラルキー内にある“PlateauARMarkerCityModel”に追加します。<br>
 
-<img width="600" alt="ar_sample_multimarker_plateauarmarkermodel" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/blob/manual/images/ar_sample_multimarker.png">
+<img width="600" alt="ar_sample_multimarker_plateauarmarkermodel" src="/Documentation~/Images/ar_sample_multimarker.png">
 
 
 3. ヒエラルキー内において"ARMarkerPoint"を追加した数分だけ複製します。<br>
