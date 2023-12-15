@@ -178,7 +178,7 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 4. “PlateauARMarkerCityModel”の中でそれぞれのARMarkerの中にARMarkerPointをアタッチします。<br>
 
-<img width="600" alt="スクリーンショット 2023-12-01 18 08 00" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/blob/manual/images/ar_sample_marker_attach.png">
+<img width="600" alt="ar_sample_marker_attach" src="/Documentation~/Images/ar_sample_marker_attach.png">
 
 5. それぞれのARMakerPointをシーンビューの中でPLATEAU都市モデル中に配置して行きます。<br>
 実際に実空間上でスキャンする想定の場所に配置してください。
@@ -202,9 +202,9 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 尚、これらのポイントは "CheckPointManager" によって管理されています。"CheckPointManager" に新しくポイントを追加することでチェックポイントや経由点を追加することができます。
 
-<img width="800" alt="ar_sample_customize_checkpoint" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/73b6814e-7419-4736-a9bf-fa25c90dcd9a">
+<img width="800" alt="ar_sample_customize_checkpoint" src="/Documentation~/Images/ar_sample_customize_checkpoint.png">
 
-<img width="800" alt="ar_sample_customize_routepos" src="https://github.com/unity-shimizu/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/137732437/591081d1-b059-4572-9c75-f7c740c6c449">
+<img width="800" alt="ar_sample_customize_routepos" src="/Documentation~/Images/ar_sample_customize_routepos.png">
 
 # ライセンス
 - 本リポジトリはMITライセンスで提供されています。
