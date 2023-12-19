@@ -1,9 +1,11 @@
 # AR Treasure Map
+<img width="1080" alt="artreasuremap_kv" src="/Documentation~/Images/artreasuremap_kv.png">
+
 PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 ### 更新履歴
 
-|  2023/12/13  |  AR サンプルシーン 初回リリース|
+|  2023/12/22  |  AR サンプルシーン 初回リリース|
 | :--- | :--- |
 
 # 目次
