@@ -86,6 +86,12 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 <img width="600" alt="ar_sample_marker_map" src="/Documentation~/Images/ar_sample_marker_map.png">
 
+実際に位置合わせを行う際には、こちらのマーカー画像をご利用ください。<br>
+<img width="200" alt="ARMarkerImage" src="/Documentation~/Images/ARMarkerImage.png">
+<img width="200" alt="ARMarkerImage2" src="/Documentation~/Images/ARMarkerImage2.png">
+<img width="200" alt="ARMarkerImage3" src="/Documentation~/Images/ARMarkerImage3.png">
+
+
 ### アプリケーションプレイ手順
 
 1. ビルドしたアプリケーションを開くと、オープニング画面が表示されます。「始めましょう」のボタンをタップします。
