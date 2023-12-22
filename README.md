@@ -127,8 +127,12 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 <img width="400" alt="ar_sample_gotocheck" src="/Documentation~/Images/ar_sample_go_to_check.png">
 
 <br>
-<img width="400" alt="ar_sample_ginzasix" src="/Documentation~/Images/ar_sample_ginzasix.png">
-[内山FB]画像リンクがない。ビジュアルに「道筋」「メダル」のいずれの画像もないのでよくわからない。適切なシーンを用意すること。
+<img width="400" alt="ar_sample_ginzasix" src="/Documentation~/Images/ar_sample_ginzasix_coin.png">
+
+<img width="400" alt="ar_sample_ginzasix_coin_get" src="/Documentation~/Images/ar_sample_ginzasix_coin_get.png">
+<br>
+<img width="400" alt="ar_sample_navpath" src="/Documentation~/Images/ar_sample_navpath.png">
+
 
 5. 最後のメダルを集めると、メダル集め終了ウィンドウが表示されます。
     - 「終了」ボタンをタップすると、最初の画面に戻ります。
