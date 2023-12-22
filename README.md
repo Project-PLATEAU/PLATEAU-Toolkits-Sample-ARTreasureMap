@@ -1,7 +1,8 @@
-![image](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/79615787/023df673-f9cc-487a-815c-aadf08d2330c)# AR Treasure Map
+# AR Treasure Map
+PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
+
 <img width="1080" alt="artreasuremap_kv" src="/Documentation~/Images/artreasuremap_kv.png">
 
-PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 ### 更新履歴
 
@@ -234,9 +235,34 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 - 経由点 (RoutePoint)
     - 経路を表示するためのポイント
     - 曲がり角など、最後のチェックポイントから次のチェックポイントへのルートが直接でない場合に利用します。
+ 
+- チェックポイントの順番とゴールの設定
 
 尚、これらのポイントは "CheckPointManager" によって管理されています。"CheckPointManager" に新しくポイントを追加することでチェックポイントや経由点を追加することができます。
+ヒエラルキーの中のCheckpointを複製したり、削除することでチェックポイントの数を増減させられます。また、CheckPointのInspectorにある"CheckPointObject"の中の"CheckPointIndex"の数値を変更すると、
+何番目のチェックポイントにするかを変更することが可能です。また同コンポーネントの中にある各種Prefabを入れ替えることで、チェックポイントのデザインを変更することができます。
+全てのチェックポイントの中で一番"CheckPointIndex"の値が大きなものが最終地点となり、ユーザーが到達した直後にゴールUIが表示されます。
+
+<img width="600" alt="ar_sample_checkpoint_inspector" src="/Documentation~/Images/ar_sample_checkpoint_inspector.png">
+
+- ナビゲーションラインの表示
+    -　配置されたチェックポイントに合わせて自動的にナビゲーションラインが表示されます。
+  - ナビゲーションラインのデザインを変更したい場合は、下記のPrefabを変更することで可能です。
+  - 本アプリでは下記のprefabが利用されています。
+
+  
+  <img width="600" alt="ar_sample_checkpoint_inspector" src="/Documentation~/Images/ar_sample_checkpoint_manager.png">
+
+  <img width="600" alt="ar_sample_pathpoint_path" src="/Documentation~/Images/ar_sample_pathpoint_path.png">
+
+
+  <img width="600" alt="ar_sample_pathpointh" src="/Documentation~/Images/ar_sample_pathpoint.png">
+
+  
 [内山FB]道筋を表す矢印はどうやって追加するのか？チェックポイントの順番はどうやって設定するのか？ゴールの設定は？など、解説が薄いのでよくわからない。全般的にボリュームを増やすこと。
+
+
+
 
 <img width="800" alt="ar_sample_customize_checkpoint" src="/Documentation~/Images/ar_sample_customize_checkpoint.png">
 
