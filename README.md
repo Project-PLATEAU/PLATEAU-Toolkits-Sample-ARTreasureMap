@@ -247,7 +247,7 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 本アプリではPLATEAUモデルをオクルージョン用に活用しています。入れ替えたモデルのレイヤーをOcculuderとすることで、遮蔽用のオブジェクトとすることが可能です。
 
-<img width="400" alt="ar_sample_occuluder" src="/Documentation~/Images/ar_sample_occuluder.png">
+<img width="800" alt="ar_sample_occuluder" src="/Documentation~/Images/ar_sample_occuluder.png">
 
 なおAR Extensionsを使ったオクルージョン機能ついて詳しくは下記をご確認ください。
 <br>
