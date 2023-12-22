@@ -1,4 +1,4 @@
-# AR Treasure Map
+![image](https://github.com/PLATEAU-Toolkits-Internal/PLATEAU-Toolkits-Sample-ARTreasureMap/assets/79615787/023df673-f9cc-487a-815c-aadf08d2330c)# AR Treasure Map
 <img width="1080" alt="artreasuremap_kv" src="/Documentation~/Images/artreasuremap_kv.png">
 
 PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
@@ -98,7 +98,9 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 <img width="400" alt="ar_sample_title" src="/Documentation~/Images/ar_sample_title.png">
 
-2. PLATEAU 3D都市モデルの表示方法を選択します。これらはサンプルとして主なARでの3D都市モデルの表示方法の実装例を紹介するためのものであり、どの方法でも体験できる内容は同じです。いずれかの表示方法を選択すると、メダル集めのメインシーンへ遷移します。
+2. PLATEAU 3D都市モデルの表示方法を選択します。
+この機能は3D都市モデルの表示方法の実装例を紹介するために用意したものであり、どの方法でも体験できる内容は同じです。  
+いずれかの表示方法を選択すると、メダル集めのメインシーンへ遷移します。[内山FB]日本語がおかしかったので修正。
     - インポートしたモデル
         - Unityエディターで事前にインポートした3D都市モデルを表示します。
     - ストリーミングモデル
@@ -112,6 +114,7 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
     - インポートしたモデル、ストリーミングモデルでは周辺建物にカメラを向けて、自己位置推定を行います。
         - 天候などによっては位置合わせ処理が完了しないことがあります。別の角度から建物にカメラをかざしてください。
     - ARマーカーモデルでは用意されたARマーカーを読み取り、3D都市モデルを表示させてください。
+[内山FB]マーカーはどこに置けばいいのか？を解説する。
 
 <img width="400" alt="ar_sample_ar_scan" src="/Documentation~/Images/ar_sample_ar_scan.png">
 
@@ -122,6 +125,7 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 <br>
 <img width="400" alt="ar_sample_ginzasix" src="/Documentation~/Images/ar_sample_ginzasix.png">
+[内山FB]画像リンクがない。ビジュアルに「道筋」「メダル」のいずれの画像もないのでよくわからない。適切なシーンを用意すること。
 
 5. 最後のメダルを集めると、メダル集め終了ウィンドウが表示されます。
     - 「終了」ボタンをタップすると、最初の画面に戻ります。
@@ -139,12 +143,12 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 ヒエラルキーから "PreimportedCityModel" の中にある "GinzaImportedCityModel" を削除し、PLATEAU SDK でインポートした別の3D都市モデルを "PreimportedCityModel" 内に配置します（インポートの方法は [PLATEAU SDK for Unityの使い方](https://project-plateau.github.io/PLATEAU-SDK-for-Unity/manual/ImportCityModels.html) をご確認ください）。
 
 次に、 "PreimportedCityModel" にアタッチされている `Plateau AR Positioning` コンポーネントをインスペクタで開き、インポートした 3D都市モデルオブジェクトを `Plateau City Model` フィールドに設定してください。
-
+[内山FB]ビジュアルも入れつつもう少し丁寧に説明する。
 
 <img width="800" alt="ar_sample_customize_preimport_modelreplace" src="/Documentation~/Images/ar_sample_customize_preimport_modelreplace.png">
 
 ### ストリーミング形式
-
+[内山FB]仕組みの解説をしたうえでカスタマイズを説明する。
 ヒエラルキーから "StreamingCityModel" の中にある "CesiumGeoreference" をクリックし、インスペクタを開きます。
  `Latitude` (緯度) と `Longitude` (経度) をアプリケーションを利用する場所のものに変更してください。緯度経度は地図サービスなどを利用して取得することができます。
 
@@ -209,10 +213,13 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
     - 曲がり角など、最後のチェックポイントから次のチェックポイントへのルートが直接でない場合に利用します。
 
 尚、これらのポイントは "CheckPointManager" によって管理されています。"CheckPointManager" に新しくポイントを追加することでチェックポイントや経由点を追加することができます。
+[内山FB]道筋を表す矢印はどうやって追加するのか？チェックポイントの順番はどうやって設定するのか？ゴールの設定は？など、解説が薄いのでよくわからない。全般的にボリュームを増やすこと。
 
 <img width="800" alt="ar_sample_customize_checkpoint" src="/Documentation~/Images/ar_sample_customize_checkpoint.png">
 
 <img width="800" alt="ar_sample_customize_routepos" src="/Documentation~/Images/ar_sample_customize_routepos.png">
+
+[内山FB]オクルージョンの設定方法、ストリーミング利用の設定方法などさらに解説が必要。
 
 # ライセンス
 - 本リポジトリはMITライセンスで提供されています。
