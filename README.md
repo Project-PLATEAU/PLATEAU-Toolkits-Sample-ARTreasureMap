@@ -146,6 +146,10 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 別の場所で利用したい場合は、利用する場所に合わせてPLATEAU 3D都市モデル変更する必要があります。
 
 ### 事前インポート形式
+事前インポート形式では、Unity Editorのシーン上にあらかじめPLATEAUモデルをインポート、配置してアプリを実装します。
+ランタイム環境でのネットワーク速度が遅い場合やダウンロード量を抑えたい場合におすすめです。
+<br><br>
+#### 手順
 プロジェクトから "Assets/Scenes/Main" シーンを開きます。
 
 ヒエラルキーから "PreimportedCityModel" の中にある "GinzaImportedCityModel" を削除し、PLATEAU SDK でインポートした別の3D都市モデルを "PreimportedCityModel" 内に配置します（インポートの方法は [PLATEAU SDK for Unityの使い方](https://project-plateau.github.io/PLATEAU-SDK-for-Unity/manual/ImportCityModels.html) をご確認ください）。
@@ -158,7 +162,11 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 
 ### ストリーミング形式
-[内山FB]仕組みの解説をしたうえでカスタマイズを説明する。
+ストリーミング形式ではCesiumを利用し、緯度・経度情報のみをあらかじめ設定した上でアプリを構築していきます。
+<br>
+PLATEAUモデルはアプリビルド・起動後のランタイムにおいて、利用ユーザーの現在位置に合わせて逐次モデルデータがダウンロード・配置されていきます。
+<br><br>
+#### 手順
 ヒエラルキーから "StreamingCityModel" の中にある "CesiumGeoreference" をクリックし、インスペクタを開きます。
  `Latitude` (緯度) と `Longitude` (経度) をアプリケーションを利用する場所のものに変更してください。緯度経度は地図サービスなどを利用して取得することができます。
 
@@ -169,7 +177,12 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 <img width="800" alt="ar_sample_customize_streaming_lonlat" src="/Documentation~/Images/ar_sample_customize_streaming_lonlat.png">
 
 ### ARマーカー形式
+Unity Editorのシーン上にあらかじめPLATEAUモデルをインポートし、またPLATEAUモデルの中にARマーカーも配置することで、
+その位置関係の関連付けを行い、ランタイムで位置関係を解決しPLATEAUモデルを表示します。
+ランタイムなどでネットワーク環境がない場合などでも、マーカー認識を行うことで、AR上にPLATEAUモデルを配置することができます。
 
+
+#### 手順
 ヒエラルキーから "ARMarkerBasedCityModel" > "CityModels" > "GinzaImportedCityModel" を削除し、事前インポート形式と同様に任意の3D都市モデルをインポートして削除したオブジェクトと同様に "CityModels" 内に配置します。
 
 次に、自己位置推定に利用するARマーカーの配置場所を変更します。サンプルプロジェクトでは "ARMarkerBasedCityModel" の中にある "ARMarkerPoint" をARマーカーの位置として利用しています。
