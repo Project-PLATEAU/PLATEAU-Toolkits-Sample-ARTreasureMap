@@ -115,7 +115,7 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
     - インポートしたモデル、ストリーミングモデルでは周辺建物にカメラを向けて、自己位置推定を行います。
         - 天候などによっては位置合わせ処理が完了しないことがあります。別の角度から建物にカメラをかざしてください。
     - ARマーカーモデルでは用意されたARマーカーを読み取り、3D都市モデルを表示させてください。
-    - ARマーカーはプリントなどを行い、下記の地図上の位置に向きも合わせて配置してください。サンプルのARマーカー画像は
+    - ARマーカーはプリントなどを行い、下記の地図上の位置に向きも合わせて配置してください。印刷用のサンプルのARマーカー画像はサンプルフォルダの "ar_marker.pdf" をご利用ください。
 
 <img width="400" alt="ar_sample_ar_scan" src="/Documentation~/Images/ar_sample_ar_scan.png">
 
@@ -123,11 +123,9 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 <img width="600" alt="ar_sample_multimarker_map" src="/Documentation~/Images/ar_sample_marker_map.png">
 
 
-4. 開始点に設定されているGINZA SIXの入り口に配置されているメダルを最初に獲得すると次のメダルまでの道筋が表示されるので、目的地までメダル集めを進行してください。
+4. 開始点に設定されているGINZA SIXの入り口に配置されているメダルを最初に獲得すると次のメダルまでの道筋が表示されるので、目的地までメダル集めを進行してください。メダルは近づくことで獲得することができます。
 
 <img width="380" alt="ar_sample_gotocheck" src="/Documentation~/Images/ar_sample_go_to_check.png"><img width="400" alt="ar_sample_ginzasix" src="/Documentation~/Images/ar_sample_ginzasix_coin.png">
-
-メダルに近づくとメダルを獲得できます。
 <br>
 <img width="400" alt="ar_sample_ginzasix_coin_get" src="/Documentation~/Images/ar_sample_ginzasix_coin_get.png">
 
@@ -147,26 +145,22 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 別の場所で利用したい場合は、利用する場所に合わせてPLATEAU 3D都市モデル変更する必要があります。
 
 ### 事前インポート形式
-事前インポート形式では、Unity Editorのシーン上にあらかじめPLATEAUモデルをインポート、配置してアプリを実装します。
-ランタイム環境でのネットワーク速度が遅い場合やダウンロード量を抑えたい場合におすすめです。
-<br><br>
+事前インポート形式では、シーン上にPLATEAU SDKでインポートした3D都市モデルをコイン集めで利用する3D都市モデルとして配置することができます。配置された3D都市モデルは Google Geospatial API を用いてユーザーの現在位置の緯度経度を基準に位置合わせが行われ、アプリケーション上で正しい位置に3D都市モデルが表示されます。
+
+ストリーミング形式と異なり、アプリケーション利用時のネットワーク速度が遅い場合やダウンロード量を抑えたい場合はこちらの形式をご利用ください。
+
 #### 手順
 プロジェクトから "Assets/Scenes/Main" シーンを開きます。
 
 ヒエラルキーから "PreimportedCityModel" の中にある "GinzaImportedCityModel" を削除し、PLATEAU SDK でインポートした別の3D都市モデルを "PreimportedCityModel" 内に配置します（インポートの方法は [PLATEAU SDK for Unityの使い方](https://project-plateau.github.io/PLATEAU-SDK-for-Unity/manual/ImportCityModels.html) をご確認ください）。
 
-次に、 "PreimportedCityModel"オブジェクトにアタッチされている `Plateau AR Positioning` コンポーネントをインスペクタで開き、インポートした 3D都市モデルオブジェクトを `Plateau City Model` フィールドに設定してください。
+次に、 "PreimportedCityModel" オブジェクトにアタッチされている `Plateau AR Positioning` コンポーネントをインスペクタで開き、インポートした3D都市モデルオブジェクトを `Plateau City Model` フィールドに設定してください。
 
 <img width="800" alt="ar_sample_newimportedcity" src="/Documentation~/Images/ar_sample_newimportedcity.png">
 
-
-
-
 ### ストリーミング形式
-ストリーミング形式ではCesiumを利用し、緯度・経度情報のみをあらかじめ設定した上でアプリを構築していきます。
-<br>
-PLATEAUモデルはアプリビルド・起動後のランタイムにおいて、利用ユーザーの現在位置に合わせて逐次モデルデータがダウンロード・配置されていきます。
-<br><br>
+ストリーミング形式では Cesium 3D Tiles を利用します。3D Tiles の緯度・経度情報を設定し、コイン集めで利用する3D都市モデルを構築します。Cesium 3D Tiles はユーザーがアプリケーションを利用する際に、ユーザーの現在位置に合わせて逐次3D都市モデルをダウンロード（ストリーミング）し、アプリケーション内に3D都市モデルを表示します。
+
 #### 手順
 ヒエラルキーから "StreamingCityModel" の中にある "CesiumGeoreference" をクリックし、インスペクタを開きます。
  `Latitude` (緯度) と `Longitude` (経度) をアプリケーションを利用する場所のものに変更してください。緯度経度は地図サービスなどを利用して取得することができます。
@@ -178,10 +172,11 @@ PLATEAUモデルはアプリビルド・起動後のランタイムにおいて�
 <img width="800" alt="ar_sample_customize_streaming_lonlat" src="/Documentation~/Images/ar_sample_customize_streaming_lonlat.png">
 
 ### ARマーカー形式
-Unity Editorのシーン上にあらかじめPLATEAUモデルをインポートし、またPLATEAUモデルの中にARマーカーも配置することで、
+シーン上にPLATEAUSDKモデルをインポートし、またPLATEAUモデルの中にARマーカーも配置することで、
 その位置関係の関連付けを行い、ランタイムで位置関係を解決しPLATEAUモデルを表示します。
-ランタイムなどでネットワーク環境がない場合などでも、マーカー認識を行うことで、AR上にPLATEAUモデルを配置することができます。
+ARマーカー形式では事前インポート形式と同様に、シーン上にPLATEAU SDKでインポートした3D都市モデルをコイン集めで利用する3D都市モデルとして配置することができます。配置された3D都市モデルに位置合わせ用のARマーカーを設定することで、アプリケーション利用時にARマーカーを読み込むことで位置合わせを行うことができます。
 
+この形式では3D都市モデルは事前にアプリケーションに組み込まれ、位置合わせはARマーカーのみで行われるため、ネットワーク環境がない場合などでも利用することができます。
 
 #### 手順
 ヒエラルキーから "ARMarkerBasedCityModel" > "CityModels" > "GinzaImportedCityModel" を削除し、事前インポート形式と同様に任意の3D都市モデルをインポートして削除したオブジェクトと同様に "CityModels" 内に配置します。
@@ -227,49 +222,44 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 
 ## 3-2. メダル（チェックポイント）の位置や順番を変更する
-
 新しく設定した3D都市モデルに合わせ、メダル（チェックポイント）の位置を変更します。それぞれの表示方法に対応したゲームオブジェクトの中にある "CheckPoints" の中にメダルの位置を設定するオブジェクトが配置されているので、新しい3D都市モデルの形状に合わせてルートを設定します。チェックポイントは2種類存在します。
 
-
 ### チェックポイント (CheckPoint)
-メダルが表示され、プレイヤーが必ず経由する必要のあるポイントです。
+集める対象のメダルが表示され、プレイヤーが必ず経由する必要のある地点です。サンプルではメダルにチェックポイントが示す場所にある建物や地名を表示しています。
 
 ### 経由点 (RoutePoint)
-経路を表示するためのポイント
-曲がり角など、最後のチェックポイントから次のチェックポイントへのルートが直接でない場合に利用します。
+最後のチェックポイント（最後に獲得したメダルの地点）から次のチェックポイントまでの経路を表示するための地点です。チェックポイントのみの設定でも経路は表示されますが、曲がり角などがあり、経路が直線でない場合に利用します。
 
 <img width="800" alt="ar_sample_customize_checkpoint" src="/Documentation~/Images/ar_sample_customize_checkpoint.png">
 <img width="800" alt="ar_sample_customize_routepos" src="/Documentation~/Images/ar_sample_customize_routepos.png">
 
 ### チェックポイントの順番とゴールの設定
-これらのポイントは "CheckPointManager" によって管理されています。"CheckPointManager" に新しくポイントを追加することでチェックポイントや経由点を追加することができます。
-ヒエラルキーの中のCheckpointを複製したり、削除することでチェックポイントの数を増減させられます。また、CheckPointのInspectorにある"CheckPointObject"の中の"CheckPointIndex"の数値を変更すると、
-何番目のチェックポイントにするかを変更することが可能です。また同コンポーネントの中にある各種Prefabを入れ替えることで、チェックポイントのデザインを変更することができます。
-全てのチェックポイントの中で一番"CheckPointIndex"の値が大きなものが最終地点となり、ユーザーが到達した直後にゴールUIが表示されます。
-<br>
+チェックポイントおよび経由点は "CheckPointManager" によって管理され、 `Check Points` フィールドにチェックポイントを追加・削除することで経由を設定することができます。 "CheckPointManager" では `Check Points` に登録されている順序を経路の順序としてチェックポイントを管理します。 `Check Points` に登録されている中で最後のチェックポイントにユーザーが到達するとメダル集めが終了したことを示すダイアログが表示されます。
+
+なお、サンプルでは提供している3つの形式ごとに "CheckPointManager" が用意されているため、利用する形式に合わせて "CheckPointManager" を選択してください（それぞれの形式のルートオブジェクトのヒエラルキーに配置されています）。
+
+新しいゲームオブジェクトからチェックポイントを追加するには別途コンポーネントなどの設定が必要になるため、チェックポイントを追加する場合はサンプルで提供しているシーンの中にある "CheckPoint" を複製してご利用ください。
+
+チェックポイントにサンプルで表示しているオブジェクト（メダル）を変更する場合、`CheckPointObject` コンポーネントの以下のフィールドを設定することでチェックポイントのデザインを変更することができます。
+
 <img width="800" alt="ar_sample_checkpoint_inspector" src="/Documentation~/Images/ar_sample_checkpoint_inspector.png">
 
 ### ナビゲーションラインの表示
-配置されたチェックポイントに合わせて自動的にナビゲーションラインが表示されます。
-ナビゲーションラインのデザインを変更したい場合は、下記のPrefabを変更することで可能です。
-<br>
+最後のチェックポイントから次のチェックポイントへの経路に表示されるナビゲーションラインのデザインを変更したい場合は、`CheckPointManager` コンポーネントの以下のフィールドに任意のプレハブを設定することでデザインを変更することができます。
+
 <img width="600" alt="ar_sample_checkpoint_inspector" src="/Documentation~/Images/ar_sample_checkpoint_manager.png">
 
 
-本アプリでは参考として下記のprefabが利用されています。
-<br>
+参考までに、本サンプルプロジェクトでは以下のプレハブを利用しています（ "Assets/Prefabs/PathPoint" ）。
 <img width="600" alt="ar_sample_pathpoint_path" src="/Documentation~/Images/ar_sample_pathpoint_path.png">
-<img width="600" alt="ar_sample_pathpointh" src="/Documentation~/Images/ar_sample_pathpoint.png">
 
-
-## 3-3. オクルージョンの設定方法
-
-本アプリではPLATEAUモデルをオクルージョン用に活用しています。入れ替えたモデルのレイヤーをOcculuderとすることで、遮蔽用のオブジェクトとすることが可能です。
+## 3-3. オクルージョンの設定方法（3D都市モデルの遮蔽設定）
+本サンプルプロジェクトでは3D都市モデルを別のオブジェクト遮蔽するために活用しています。別の地域の3D都市モデルをインポートした場合は、3D都市モデルのゲームオブジェクトのレイヤーを "Occuluder" に設定することで遮蔽用のオブジェクトとして利用することができます。レイヤーを変更する際はルートのオブジェクトだけでなく子オブジェクトのレイヤーも再帰的に変更してください（ルートオブジェクトのレイヤーを変更すると子オブジェクトのレイヤーも同様に変更するかどうかを確認するダイアログが表示されます）。
 
 <img width="800" alt="ar_sample_occuluder" src="/Documentation~/Images/ar_sample_occuluder.png">
 
-なおAR Extensionsを使ったオクルージョン機能ついて詳しくは下記をご確認ください。
-<br>
+なお、オクルージョンおよび PLATEAU AR Extensions を使ったオクルージョン機能の詳細は以下のドキュメントを参照してください。
+
 [ARオクルージョン機能の利用方法](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity?tab=readme-ov-file#5-ar%E3%82%AA%E3%82%AF%E3%83%AB%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E6%A9%9F%E8%83%BD%E3%81%AE%E5%88%A9%E7%94%A8%E6%96%B9%E6%B3%95)
 
 
@@ -286,4 +276,3 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 - インポートエリアの広さや地物の種類（建物、道路、災害リスクなど）が増えると処理負荷が高くなる可能性があります。
 - 本リポジトリの内容は予告なく変更・削除する可能性があります。
 - 本リポジトリの利用により生じた損失及び損害等について、国土交通省はいかなる責任も負わないものとします。
-
