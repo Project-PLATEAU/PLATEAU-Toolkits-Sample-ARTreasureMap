@@ -124,13 +124,14 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 4. 開始点に設定されているGINZA SIXの入り口に配置されているメダルを最初に獲得すると次のメダルまでの道筋が表示されるので、目的地までメダル集めを進行してください。
 
-<img width="400" alt="ar_sample_gotocheck" src="/Documentation~/Images/ar_sample_go_to_check.png">
+<img width="380" alt="ar_sample_gotocheck" src="/Documentation~/Images/ar_sample_go_to_check.png"><img width="400" alt="ar_sample_ginzasix" src="/Documentation~/Images/ar_sample_ginzasix_coin.png">
 
+メダルに近づくとメダルを獲得できます。
 <br>
-<img width="400" alt="ar_sample_ginzasix" src="/Documentation~/Images/ar_sample_ginzasix_coin.png">
-
 <img width="400" alt="ar_sample_ginzasix_coin_get" src="/Documentation~/Images/ar_sample_ginzasix_coin_get.png">
-<br>
+
+メダルを獲得すると、次のメダルの位置までの道筋が示されます。
+
 <img width="400" alt="ar_sample_navpath" src="/Documentation~/Images/ar_sample_navpath.png">
 
 
