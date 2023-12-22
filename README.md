@@ -226,47 +226,40 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 <img width="600" alt="ar_sample_multimarker_map" src="/Documentation~/Images/ar_sample_marker_map.png">
 
 
-## 3-2. メダル（チェックポイント）の位置を変更する
+## 3-2. メダル（チェックポイント）の位置や順番を変更する
 
 新しく設定した3D都市モデルに合わせ、メダル（チェックポイント）の位置を変更します。それぞれの表示方法に対応したゲームオブジェクトの中にある "CheckPoints" の中にメダルの位置を設定するオブジェクトが配置されているので、新しい3D都市モデルの形状に合わせてルートを設定します。チェックポイントは2種類存在します。
 
-- チェックポイント (CheckPoint)
-    - メダルが表示され、プレイヤーが必ず経由する必要のあるポイント
-- 経由点 (RoutePoint)
-    - 経路を表示するためのポイント
-    - 曲がり角など、最後のチェックポイントから次のチェックポイントへのルートが直接でない場合に利用します。
- 
-- チェックポイントの順番とゴールの設定
 
-尚、これらのポイントは "CheckPointManager" によって管理されています。"CheckPointManager" に新しくポイントを追加することでチェックポイントや経由点を追加することができます。
+### チェックポイント (CheckPoint)
+メダルが表示され、プレイヤーが必ず経由する必要のあるポイントです。
+
+### 経由点 (RoutePoint)
+経路を表示するためのポイント
+曲がり角など、最後のチェックポイントから次のチェックポイントへのルートが直接でない場合に利用します。
+
+<img width="800" alt="ar_sample_customize_checkpoint" src="/Documentation~/Images/ar_sample_customize_checkpoint.png">
+<img width="800" alt="ar_sample_customize_routepos" src="/Documentation~/Images/ar_sample_customize_routepos.png">
+
+### チェックポイントの順番とゴールの設定
+これらのポイントは "CheckPointManager" によって管理されています。"CheckPointManager" に新しくポイントを追加することでチェックポイントや経由点を追加することができます。
 ヒエラルキーの中のCheckpointを複製したり、削除することでチェックポイントの数を増減させられます。また、CheckPointのInspectorにある"CheckPointObject"の中の"CheckPointIndex"の数値を変更すると、
 何番目のチェックポイントにするかを変更することが可能です。また同コンポーネントの中にある各種Prefabを入れ替えることで、チェックポイントのデザインを変更することができます。
 全てのチェックポイントの中で一番"CheckPointIndex"の値が大きなものが最終地点となり、ユーザーが到達した直後にゴールUIが表示されます。
+<br>
+<img width="800" alt="ar_sample_checkpoint_inspector" src="/Documentation~/Images/ar_sample_checkpoint_inspector.png">
 
-<img width="600" alt="ar_sample_checkpoint_inspector" src="/Documentation~/Images/ar_sample_checkpoint_inspector.png">
-
-- ナビゲーションラインの表示
-    -　配置されたチェックポイントに合わせて自動的にナビゲーションラインが表示されます。
-  - ナビゲーションラインのデザインを変更したい場合は、下記のPrefabを変更することで可能です。
-  - 本アプリでは下記のprefabが利用されています。
-
-  
-  <img width="600" alt="ar_sample_checkpoint_inspector" src="/Documentation~/Images/ar_sample_checkpoint_manager.png">
-
-  <img width="600" alt="ar_sample_pathpoint_path" src="/Documentation~/Images/ar_sample_pathpoint_path.png">
+### ナビゲーションラインの表示
+配置されたチェックポイントに合わせて自動的にナビゲーションラインが表示されます。
+ナビゲーションラインのデザインを変更したい場合は、下記のPrefabを変更することで可能です。
+<br>
+<img width="600" alt="ar_sample_checkpoint_inspector" src="/Documentation~/Images/ar_sample_checkpoint_manager.png">
 
 
-  <img width="600" alt="ar_sample_pathpointh" src="/Documentation~/Images/ar_sample_pathpoint.png">
-
-  
-[内山FB]道筋を表す矢印はどうやって追加するのか？チェックポイントの順番はどうやって設定するのか？ゴールの設定は？など、解説が薄いのでよくわからない。全般的にボリュームを増やすこと。
-
-
-
-
-<img width="800" alt="ar_sample_customize_checkpoint" src="/Documentation~/Images/ar_sample_customize_checkpoint.png">
-
-<img width="800" alt="ar_sample_customize_routepos" src="/Documentation~/Images/ar_sample_customize_routepos.png">
+本アプリでは参考として下記のprefabが利用されています。
+<br>
+<img width="600" alt="ar_sample_pathpoint_path" src="/Documentation~/Images/ar_sample_pathpoint_path.png">
+<img width="600" alt="ar_sample_pathpointh" src="/Documentation~/Images/ar_sample_pathpoint.png">
 
 
 ## 3-3. オクルージョンの設定方法
