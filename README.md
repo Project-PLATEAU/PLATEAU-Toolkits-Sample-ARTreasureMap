@@ -242,7 +242,17 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 <img width="800" alt="ar_sample_customize_routepos" src="/Documentation~/Images/ar_sample_customize_routepos.png">
 
-[内山FB]オクルージョンの設定方法、ストリーミング利用の設定方法などさらに解説が必要。
+
+## 3-3. オクルージョンの設定方法
+
+本アプリではPLATEAUモデルをオクルージョン用に活用しています。入れ替えたモデルのレイヤーをOcculuderとすることで、遮蔽用のオブジェクトとすることが可能です。
+
+<img width="400" alt="ar_sample_occuluder" src="/Documentation~/Images/ar_sample_occuluder.png">
+
+なおAR Extensionsを使ったオクルージョン機能ついて詳しくは下記をご確認ください。
+<br>
+[ARオクルージョン機能の利用方法](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity?tab=readme-ov-file#5-ar%E3%82%AA%E3%82%AF%E3%83%AB%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E6%A9%9F%E8%83%BD%E3%81%AE%E5%88%A9%E7%94%A8%E6%96%B9%E6%B3%95)
+
 
 # ライセンス
 - 本リポジトリはMITライセンスで提供されています。
