@@ -150,12 +150,10 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
 
 ヒエラルキーから "PreimportedCityModel" の中にある "GinzaImportedCityModel" を削除し、PLATEAU SDK でインポートした別の3D都市モデルを "PreimportedCityModel" 内に配置します（インポートの方法は [PLATEAU SDK for Unityの使い方](https://project-plateau.github.io/PLATEAU-SDK-for-Unity/manual/ImportCityModels.html) をご確認ください）。
 
-次に、 "PreimportedCityModel" にアタッチされている `Plateau AR Positioning` コンポーネントをインスペクタで開き、インポートした 3D都市モデルオブジェクトを `Plateau City Model` フィールドに設定してください。
+次に、 "PreimportedCityModel"オブジェクトにアタッチされている `Plateau AR Positioning` コンポーネントをインスペクタで開き、インポートした 3D都市モデルオブジェクトを `Plateau City Model` フィールドに設定してください。
 
 <img width="800" alt="ar_sample_newimportedcity" src="/Documentation~/Images/ar_sample_newimportedcity.png">
 
-
-<img width="800" alt="ar_sample_customize_preimport_modelreplace" src="/Documentation~/Images/ar_sample_customize_preimport_modelreplace.png">
 
 
 
