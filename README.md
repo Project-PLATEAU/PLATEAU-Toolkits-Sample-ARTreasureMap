@@ -1,12 +1,12 @@
 # AR Treasure Map
-PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
+### PLATEAU SDK-Toolkits for Unityを使ったサンプルプロジェクト
 
 <img width="1080" alt="artreasuremap_kv" src="/Documentation~/Images/artreasuremap_kv.png">
 
 
 ### 更新履歴
 
-|  2023/12/22  |  AR サンプルシーン 初回リリース|
+|  2023/12/25  |  AR サンプルプロジェクト 初回リリース|
 | :--- | :--- |
 
 # 目次
@@ -21,7 +21,8 @@ PLATEAU SDK-Toolkits for Unityを使ったサンプルアプリケーション
   - [2-3. ビルドしたアプリケーションの操作方法](#2-3-ビルドしたアプリケーションの操作方法)
 - [3. サンプルプロジェクトのカスタマイズ方法](#3-サンプルプロジェクトのカスタマイズ方法)
   - [3-1. アプリケーションを別の場所で利用したい場合](#3-1-アプリケーションを別の場所で利用したい場合)
-  - [3-2. メダル（チェックポイント）の位置を変更する](#3-2-メダルチェックポイントの位置を変更する)
+  - [3-2. メダル（チェックポイント）の位置や順番を変更する](#3-2-メダルチェックポイントの位置や順番を変更する)
+  - [3-3. オクルージョンの設定方法（3D都市モデルの遮蔽設定）](#3-3-オクルージョンの設定方法（3D都市モデルの遮蔽設定）)
 - [ライセンス](#ライセンス)
 - [注意事項/利用規約](#注意事項利用規約)
 
@@ -216,7 +217,7 @@ ARマーカー位置の設定方法は[マーカによる3D都市モデルの位
 
 <img width="600" alt="ar_sample_arpoint_place" src="/Documentation~/Images/ar_sample_armarkerpoint_move.png">
 
-参考までに、本サンプルシーンでは下記の場所にマーカーを複数配置しています。<br>
+参考までに、本サンプルプロジェクトでは下記の場所にマーカーを複数配置しています。<br>
 
 <img width="600" alt="ar_sample_multimarker_map" src="/Documentation~/Images/ar_sample_marker_map.png">
 
