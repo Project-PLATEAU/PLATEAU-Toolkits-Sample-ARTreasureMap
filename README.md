@@ -184,7 +184,7 @@ ARマーカー形式では事前インポート形式と同様に、シーン上
 
 次に、自己位置推定に利用するARマーカーの配置場所を変更します。サンプルプロジェクトでは "ARMarkerBasedCityModel" の中にある "ARMarkerPoint" をARマーカーの位置として利用しています。
 
-ARマーカー位置の設定方法は[マーカによる3D都市モデルの位置合わせ機能](https://github.com/unity-takeuchi/PLATEAU-SDK-AR-Extensions-for-Unity-drafts/blob/main/readme.md#4-ar%E3%83%9E%E3%83%BC%E3%82%AB%E3%83%BC%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9Fplateau%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E4%BD%8D%E7%BD%AE%E5%90%88%E3%82%8F%E3%81%9B%E6%A9%9F%E8%83%BD)をご確認ください。
+ARマーカー位置の設定方法は[マーカによる3D都市モデルの位置合わせ機能](https://github.com/Project-PLATEAU/PLATEAU-SDK-AR-Extensions-for-Unity?tab=readme-ov-file#4-ar%E3%83%9E%E3%83%BC%E3%82%AB%E3%83%BC%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F3d%E9%83%BD%E5%B8%82%E3%83%A2%E3%83%87%E3%83%AB%E3%81%AE%E4%BD%8D%E7%BD%AE%E5%90%88%E3%82%8F%E3%81%9B%E6%A9%9F%E8%83%BD)をご確認ください。
 
 <img width="800" alt="ar_sample_customize_markerposion" src="/Documentation~/Images/ar_sample_customize_markerposion.png">
 
