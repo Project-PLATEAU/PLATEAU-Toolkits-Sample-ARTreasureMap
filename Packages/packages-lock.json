@@ -186,7 +186,7 @@
         "com.synesthesias.plateau-unity-sdk": "1.0.0",
         "com.google.ar.core.arfoundation.extensions": "1.39.0"
       },
-      "hash": "0d137654cd59c903eb7561c9fe8a789922a21ffd"
+      "hash": "26800f9f46171e9dacbadda77c7b308a665741b2"
     },
     "com.unity.plateautoolkit.maps": {
       "version": "https://github.com/Project-PLATEAU/PLATEAU-SDK-Maps-Toolkit-for-Unity.git#v0.3.0",
