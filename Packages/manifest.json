@@ -11,7 +11,8 @@
   "dependencies": {
     "com.cesium.unity": "1.6.4",
     "com.google.ar.core.arfoundation.extensions": "https://github.com/google-ar/arcore-unity-extensions.git#1.39.0",
-    "com.synesthesias.plateau-unity-sdk": "https://github.com/Synesthesias/PLATEAU-SDK-for-Unity.git#v2.1.1-alpha",
+    "com.synesthesias.plateau-unity-sdk": "https://github.com/Synesthesias/PLATEAU-SDK-for-Unity.git#v2.2.1-alpha",
+    "com.unity.2d.sprite": "1.0.0",
     "com.unity.cinemachine": "2.8.9",
     "com.unity.collab-proxy": "2.0.7",
     "com.unity.ide.rider": "3.0.26",
