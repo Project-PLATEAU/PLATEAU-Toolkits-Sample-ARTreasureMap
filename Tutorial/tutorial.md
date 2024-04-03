@@ -56,8 +56,8 @@ Unity Hub からプロジェクトを作成します。Unity バージョン 202
 作成されたプロジェクトに、PLATEAU SDK for Unity を導入します。
 https://project-plateau.github.io/PLATEAU-SDK-for-Unity/manual/Installation.html
 
-## 2-3. 都市読み込み
-PLATEAU SDK を使って都市モデルをインポートします。
+## 2-3. 3D都市モデルの読み込み
+PLATEAU SDK を使って3D都市モデルをインポートします。
 https://project-plateau.github.io/PLATEAU-SDK-for-Unity/manual/ImportCityModels.html
 
 ## 2-4. PLATEAU SDK-Toolkits の追加
