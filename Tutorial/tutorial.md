@@ -68,6 +68,7 @@ PLATEAU SDK-Maps-Toolkit for Unity 1.0.0 <br>
 Unityの開発環境の準備 <br>
 PLATEAU SDK for Unity のダウンロード（[2-2. PLATEAU SDKの追加](#2-2-PLATEAUSDKの追加)） <br>
 PLATEAU SDK Toolkit for Unity のダウンロード（[2-4. PLATEAU SDK-Toolkits の追加](#2-4-PLATEAU-SDK-Toolkitsの追加)） <br>
+UI画像のダウンロード： [Assets/Images/UI](../Assets/Images/UI) 内の画像をダウンロードしてください。 <br>
 
 
 # 2. 環境作成
