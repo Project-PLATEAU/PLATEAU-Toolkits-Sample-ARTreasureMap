@@ -6,8 +6,11 @@
 
 ### 更新履歴
 
-|  2023/12/25  |  AR Treasure Map 初回リリース|
+|  更新日時  | 更新内容 |
 | :--- | :--- |
+|  2024/4/5  |  AR Treasure Map チュートリアル公開|
+|  2023/12/25  |  AR Treasure Map 初回リリース|
+
 
 # 目次
 
@@ -89,12 +92,12 @@
 
 サンプルプロジェクトでは東京銀座のGINZA SIX周辺の以下の地点にメダルと目的地を配置しています。<br>
 
-<img width="600" alt="ar_sample_marker_map" src="/Documentation~/Images/ar_sample_marker_map.png">
+<img width="400" alt="ar_sample_marker_map" src="/Documentation~/Images/ar_sample_marker_map.png">
 
 実際に位置合わせを行う際には、こちらのマーカー画像をご利用ください。<br>
-<img width="200" alt="ARMarkerImage" src="/Documentation~/Images/ARMarkerImage.png">
-<img width="200" alt="ARMarkerImage2" src="/Documentation~/Images/ARMarkerImage2.png">
-<img width="200" alt="ARMarkerImage3" src="/Documentation~/Images/ARMarkerImage3.png">
+<img width="100" alt="ARMarkerImage" src="/Documentation~/Images/ARMarkerImage.png">
+<img width="100" alt="ARMarkerImage2" src="/Documentation~/Images/ARMarkerImage2.png">
+<img width="100" alt="ARMarkerImage3" src="/Documentation~/Images/ARMarkerImage3.png">
 
 
 ### アプリケーションプレイ手順
